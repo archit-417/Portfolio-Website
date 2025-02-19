@@ -1,0 +1,140 @@
+/* Projects section container */
+.projects {
+    padding: 4rem 2rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    font-size: clamp(26px, 5vw, 32px);
+    white-space: nowrap;
+}
+
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--text-secondary);
+} 
+
+/* Grid layout for projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 1rem 3rem;
+}
+
+/* Card styling and flip functionality */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.project-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* is-flipped class is used to flip the card */
+.project-card .project-content.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Card front face */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-front {
+    background: rgba(7, 1, 34, 0.492);
+}
+
+.project-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.project-title {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Card back face */
+.card-back {
+    background: rgba(7, 1, 34, 0.506);
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.project-description {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+.project-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.live-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.github-btn {
+    background: #333;
+    color: white;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .project-card {
+        height: 350px;
+    }
+}
