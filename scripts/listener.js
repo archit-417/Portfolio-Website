@@ -31,5 +31,9 @@ function opentab(tabname, e) {
 }
 
 function openResume() {
-    window.open("#", "_blank");
+    window.open("https://drive.google.com/file/d/1Catj_Nuqx_VTTqEFOCn7KxuHityzW6v_/view?usp=sharing", "_blank");
 }
+
+function openMail() {
+    window.location.href = "mailto:architsrivastava417@gmail.com";
+  }
