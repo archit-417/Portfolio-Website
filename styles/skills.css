@@ -30,19 +30,6 @@
     background-color: var(--text-secondary);
 } 
 
-/* .skill-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-2);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
-} */
-
 .skill-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -112,7 +99,7 @@
     transform: scale(1.1);
 }
 
-.mongoimg{
+.iconimg{
     border-radius: 6px;
 }
 
