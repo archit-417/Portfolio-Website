@@ -17,6 +17,11 @@
     position: relative;
 }
 
+.hero-buttons{
+    display: grid;
+    row-gap: 1rem;
+}
+
 .hero-details{
     display: flex;
     flex-direction: column;
