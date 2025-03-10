@@ -102,8 +102,8 @@
 }
 
 .hero-icons i:hover {
-    transform: scale(1.3);
-    color: rgb(46, 79, 212);
+    transform: scale(1.1);
+    color: #8a42e3;
 }
 
 .button {
