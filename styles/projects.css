@@ -108,6 +108,22 @@
     line-height: 1.6;
 }
 
+.tech-stack p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.tech-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    column-gap: 2rem;
+    margin-top: 10px;
+}
+
 .project-buttons {
     display: flex;
     justify-content: space-around;
@@ -178,6 +194,10 @@
     .project-description {
         text-align: justify;
         margin: 1rem 0;
+    }
+
+    .tech-stack p{
+        font-size: 1rem;
     }
 
     .project-btn {
