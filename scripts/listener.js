@@ -1,3 +1,4 @@
+//-----------------PROJECTS SECTION-----------------------
 // Add click event listeners to all project cards
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', function (e) {
@@ -13,6 +14,7 @@ document.querySelectorAll('.project-card').forEach(card => {
 });
 
 
+//-----------------ABOUT SECTION-----------------------
 // To toggle between diffrent sections in About Section
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -30,10 +32,28 @@ function opentab(tabname, e) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+
+//-----------------BUTTONS LISTENER-----------------------
 function openResume() {
     window.open("https://drive.google.com/file/d/1Catj_Nuqx_VTTqEFOCn7KxuHityzW6v_/view?usp=sharing", "_blank");
 }
 
 function openMail() {
     window.location.href = "mailto:architsrivastava417@gmail.com";
-  }
+}
+
+function openProjects(){
+    window.location.href = "#projects";
+}
+
+//------------------COPY BUTTON LISTENER-------------------
+const paragraph = document.querySelector('p.copyable');
+paragraph.addEventListener('click', () => {
+  navigator.clipboard.writeText(paragraph.textContent)
+    .then(() => {
+      alert('✓ Phone number copied to clipboard');
+    })
+    .catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+});

@@ -67,7 +67,8 @@
                 
                 <h3 class="hero-dynamic">I am a, <span id="element" class="element"></span></h3>
                 
-                <div>
+                <div class="icon-container">
+                    <p>Connect with me here!</p>
                     <div class="hero-icons">
                         <a href="https://github.com/archit-417" target="_blank" title="GitHub">
                             <i class="fa-brands fa-github"></i>
@@ -84,22 +85,33 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="button">Check out my work!</a>
-                    <a href="https://drive.google.com/file/d/1Catj_Nuqx_VTTqEFOCn7KxuHityzW6v_/view?usp=sharing" target="_blank" class="button">Get Resume</a>
+                    <button id="magnetic-btn" class="magnetic-btn" onclick="openProjects()">Explore my work!</button>
+                    <button id="magnetic-btn" class="magnetic-btn" onclick="openResume()">Get Resume</button>
                 </div>
             </div>
             
-            <div class="hero-img">
+            <div class="hero-img floating">
                 <img src="images/hero-image.png" alt="Hero Image">
             </div>
+        </div>
+        <div class="hero-img-mobile floating">
+            <img src="images/hero-image.png" alt="Hero Image">
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="about-container">
-            <div class="about-image floating">
-                <img src="images/about.jpg" alt="About">
+            <div class="slideshow-container">
+                <!-- Slides will be inserted here by JavaScript -->
+                
+                <!-- Navigation buttons -->
+                <button class="prev-btn" aria-label="Previous image">&#10094;</button>
+                <button class="next-btn" aria-label="Next image">&#10095;</button>
+                
+                <div class="slide-indicators">
+                    <!-- Indicators will be inserted here by JavaScript -->
+                </div>
             </div>
 
             <div class="about-content">
@@ -129,7 +141,7 @@
     
                         <div class="tab-contents" id="achievements">
                             <ul>
-                                <li><span>2023</span><br>SIH 2023 - Finalist</li>
+                                <li><span>2023</span><br>Finalist - Smart India Hackathon 2023</li>
                                 <li><span>2023</span><br>Contributor - DevTown community</li>
                                 <li><span>2024</span><br>Solved 300+ problems on Leetcode</li>
                             </ul>
@@ -236,7 +248,7 @@
                 <div class="project-content">
                     <div class="card-front">
                         <img src="images/sorting.png" alt="Project 1" class="project-img">
-                        <h3 class="project-title">1. SortIT: Sorting Algorithm Visualizer</h3>
+                        <h3 class="project-title">SortIT: Sorting Algorithm Visualizer</h3>
                     </div>
                     <div class="card-back">
                         <h3 class="project-title back">SortIT: Sorting Algorithm Visualizer</h3>
@@ -256,7 +268,7 @@
                 <div class="project-content">
                     <div class="card-front">
                         <img src="images/abstractify.png" alt="Project 2" class="project-img">
-                        <h3 class="project-title">2. Abstractify: Paper Summarizer</h3>
+                        <h3 class="project-title">Abstractify: Paper Summarizer</h3>
                     </div>
                     <div class="card-back">
                         <h3 class="project-title back">Abstractify: Research Paper Summarizer</h3>
@@ -275,7 +287,7 @@
                 <div class="project-content">
                     <div class="card-front">
                         <img src="images/codeside.png" alt="Project 3" class="project-img">
-                        <h3 class="project-title">3. CodeSide: Online Code Editor</h3>
+                        <h3 class="project-title">CodeSide: Online Code Editor</h3>
                     </div>
                     <div class="card-back">
                         <h3 class="project-title back">CodeSide: Online Code Editor</h3>
@@ -314,8 +326,8 @@
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-details">
             <div class="contact-description">
-                <p>Big ideas often start with a simple message. Feel free to reach out!</p>
-                <p><i class="fa-brands fa-whatsapp" style="font-weight: 600;"></i> +918707596069</p>
+                <p>Big ideas often start with a simple message. Click on the number below and feel free to reach out!</p>
+                <p class="copyable"><i class="fa-brands fa-whatsapp" style="font-weight: 600;"></i>+918707596069</p>
                 <p><i class="fa-solid fa-at"></i> architsrivastava417@gmail.com</p>
                 
             </div>
@@ -336,6 +348,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/slides.js"></script>
     <script src="scripts/animate.js"></script>
     <script src="scripts/listener.js"></script>
 

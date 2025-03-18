@@ -22,7 +22,7 @@
 .contact-description p i{
     font-size: 1.9vmax;
     margin-right: 10px;
-    color: var(--secondary);
+    color: var(--text-primary);
 }
 
 .contact-details{
@@ -43,10 +43,19 @@
     padding: 2vmax;
 }
 
+.copyable{
+    cursor: pointer;
+}
+
+.copyable:hover{
+    text-decoration: underline;
+}
+
 /* Magnetic Buttons */
 .magnetic-btn {
     position: relative;
     font-size: 1.2vmax;
+    text-decoration: none;
     width: 13vmax;
     height: 4.2vmax;
     font-weight: 400;
