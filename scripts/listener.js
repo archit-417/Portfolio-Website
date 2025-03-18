@@ -46,6 +46,10 @@ function openProjects(){
     window.location.href = "#projects";
 }
 
+function openAbout(){
+    window.location.href = "#about";
+}
+
 //------------------COPY BUTTON LISTENER-------------------
 const paragraph = document.querySelector('p.copyable');
 paragraph.addEventListener('click', () => {

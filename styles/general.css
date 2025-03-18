@@ -42,6 +42,10 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
+.vibrating {
+    animation: vibrate 1s ease-in infinite;
+}
+
 /* Loading Screen */
 .loading-screen {
     position: fixed;
@@ -155,6 +159,18 @@ body {
 
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@keyframes vibrate {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
     }
 }
 
