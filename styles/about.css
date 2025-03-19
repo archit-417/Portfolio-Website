@@ -227,10 +227,11 @@
 .tab-contents a{
     color: var(--text-primary);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .tab-contents a:hover{
-    text-decoration: underline;
+    color: var(--text-secondary);
 }
 
 .tab-contents.active-tab{
