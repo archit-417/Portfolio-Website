@@ -50,6 +50,17 @@ function openAbout(){
     window.location.href = "#about";
 }
 
+function openCertificates(i) {
+    switch(i){
+        case 1: window.open("https://drive.google.com/file/d/1j0avlt6bcKSjQLZUD6Gd2-SkvRo7hm1L/view?usp=sharing", "_blank");
+        break;
+        case 2: window.open("https://drive.google.com/file/d/131Ztn2bqeQ2MmqybBK6_rjmHchKUpi_p/view?usp=sharing", "_blank");
+        break;
+        case 3: window.open("https://drive.google.com/file/d/1QsvwrVCS1OASXpZRouVjehg9RVi9RHqD/view?usp=sharing", "_blank");
+    }
+}
+
+
 //------------------COPY BUTTON LISTENER-------------------
 const paragraph = document.querySelector('p.copyable');
 paragraph.addEventListener('click', () => {

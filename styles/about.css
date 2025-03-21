@@ -224,13 +224,14 @@
     display: none;
 }
 
-.tab-contents a{
+.tab-contents .certficates{
     color: var(--text-primary);
     text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
-.tab-contents a:hover{
+.tab-contents .certficates:hover{
     color: var(--text-secondary);
 }
 
