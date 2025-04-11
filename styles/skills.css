@@ -42,7 +42,12 @@
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
+    border-bottom: 2px solid rgb(97, 60, 128);
+    border-right: 2px solid rgb(97, 60, 128);
+    box-shadow: 1px 1px 3px rgba(113, 113, 113, 0.5);
+     transform: scale(1.05) translateY(-8px);
+    /* transform: ; */
+    
 }
 
 .skill-card h3{
@@ -77,6 +82,9 @@
     opacity: 1 
 }
 
+.skill-card h3{
+    transition: opacity 0.3s ease-in-out;
+}
 .skill-card:hover h3{
     opacity: 0;
 }
